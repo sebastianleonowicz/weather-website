@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Weather Site
+    </title>
+    <meta charset="UTF-8">
+    <!--    keywords meta doesnt word- browsers/google supposedly dont give a crap about that-->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="John Doe">
+    <!--    this refresh page every 30 sec-->
+    <!--    <meta http-equiv="refresh" content="30">-->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <div>
+        <form>
+            <input id="input" type="text" name="firstname" placeholder="City Name">
+        </form>
+        <button id="weather">Check the weather</button>
+    </div>
+    <div id="app">
+        <div class="col1">
+            <p class="p1">temp {{data.temp}} °F</p>
+        </div>
+        <div  class="col2">
+            <p class="p2" >humidity {{data.humidity}} %</p>
+        </div>
+
+        <div  class="col3">
+            <p class="p3" >pressure {{data.pressure}} hPa</p>
+        </div>
+        <div  class="col4">
+            <p class="p4">wind speed {{wind.speed}} km/h</p>
+        </div>
+
+        <div class="errorModal">
+            Oh no! ;( Something's wrong! Try again!
+        </div>
+
+
+
+    </div>
+    <video autoplay muted loop id="myVideo">
+  <source src="styles/cloudsMP4.mp4" type="video/mp4">
+</video>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

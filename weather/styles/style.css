@@ -1,0 +1,131 @@
+body {
+    box-sizing: border-box;
+    height: 95vh;
+    width: 99vw;
+    position: relative;
+}
+
+#weather {
+    color: whitesmoke;
+    z-index: 5;
+    font-family: 'Space Mono', monospace;
+    top: 19%;
+    left: 50%;
+    position: absolute;
+    font-size: 31px;
+    background-color: lightslategray;
+    padding: 11px;
+    border-radius: 24px;
+    border-style: solid;
+}
+
+#input {
+    position: absolute;
+    left: 17%;
+    top: 19%;
+    padding: 12px;
+    border-color: lightslategray;
+    border-width: 10px;
+    border-style: solid;
+    font-size: 25px;
+}
+
+#app {
+    position: absolute;
+    height: 30%;
+    width: 78%;
+    left: 13%;
+    top: 50%;
+    /* background-color: bisque; */
+    display: none;
+    flex-direction: row;
+}
+
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+
+.col1 {
+    background-image: url(tempSymbol.jpg);
+    background-size: 115px 115px;
+    background-repeat: none;
+    background-repeat: no-repeat;
+
+}
+
+.col2 {
+    background-image: url(humiditySymbol.jpg);
+    background-size: 115px 115px;
+    background-repeat: none;
+    background-repeat: no-repeat;
+}
+
+.col3 {
+    background-image: url(pressureSymbol.png);
+    background-size: 115px 115px;
+    background-repeat: none;
+    background-repeat: no-repeat;
+}
+
+.col4 {
+    background-image: url(windSymbol.jpg);
+    background-size: 115px 115px;
+    background-repeat: none;
+    background-repeat: no-repeat;
+}
+
+.errorModal {
+    display: none;
+
+    height: 16%;
+    width: 35%;
+    background-color: red;
+    padding: 29px;
+    font-size: 21px;
+    border-color: whitesmoke;
+    border-width: 2px;
+    border-style: solid;
+    color: whitesmoke;
+    margin-left: 236px;
+    border-radius: 25px;
+}
+
+.p1 {
+  position: absolute;
+    top: 65%;
+    margin-left: -4px;
+    font-size: 20px;
+}
+
+.p2 {
+    position: absolute;
+    top: 65%;
+    margin-left: 13px;
+}
+
+.p3 {
+    position: absolute;
+    top: 65%;
+    margin-left: 2px;
+}
+
+.p4 {
+    position: absolute;
+    top: 65%;
+    margin-left: -7px;
+}
